@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Icon" href="./Asstes/Spotify_Primary_Logo_RGB_Green.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option nav-option">
+                        <img src="./Asstes/library_icon.png">
+                        <a href="#">Your library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box"> 
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, w'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some postcaste to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episode</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content"> 
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./Asstes/backward_icon.png">
+                    <img src="./Asstes/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge hide">Explore Premium</button>
+                    <button class="badge black-badge"><i class="fa-solid fa-circle-down" style="margin-right: 6px;"></i>Install App</button>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img class="card-img" src="./Asstes/card1img.jpeg">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info"> Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <h2>Treading now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img class="card-img" src="./Asstes/card2img.jpeg">
+                    <p class="card-title">mahiye Jinna Sohna</p>
+                    <p class="card-info"> Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./Asstes/card3img.jpeg">
+                    <p class="card-title">Mere paas tum ho</p>
+                    <p class="card-info"> Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./Asstes/card4img.jpeg">
+                    <p class="card-title">Naa ready</p>
+                    <p class="card-info"> Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img class="card-img" src="./Asstes/card5img.jpeg">
+                    <p class="card-title">Top Songs - Global</p>
+                    <p class="card-info"> Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./Asstes/card6img.jpeg">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info"> Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./Asstes/card1img.jpeg">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info"> Your daily updates of the most played...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album"></div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./Asstes/player_icon1.png" class="played-controls-icon">
+                    <img src="./Asstes/player_icon2.png" class="played-controls-icon">
+                    <img src="./Asstes/player_icon3.png" class="played-controls-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./Asstes/player_icon4.png" class="played-controls-icon">
+                    <img src="./Asstes/player_icon5.png" class="played-controls-icon">
+                </div>
+                <div class="player-bar">
+                    <span class="current-time">00:00</span>
+                    <input type="range" max="100" min="0" class="progress-bar" step="1" >
+                    <span class="total-time" >3:30</span>
+                </div>
+            </div>
+            <div class="controls"></div>
+        </div>
+    </div>
+</body>
+</html>
